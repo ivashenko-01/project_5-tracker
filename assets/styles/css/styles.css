@@ -405,6 +405,8 @@ font-size: var(--button-font-size);
 .section-stages__item {
   position: relative;
   padding-top: 25px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .section-stages__item-number {
@@ -433,6 +435,8 @@ font-size: var(--button-font-size);
   padding: 50px;
   border-radius: 50px;
   background: #FFF;
+
+  text-align: center;
 }
 /* ============================= */
 

@@ -1,3 +1,7 @@
+tippy('#myButton', {
+    content: "Данная опция уже включена в стоимость",
+});
+
 const sectionRegion = new Swiper('.section-region__wrapper', {
     // Optional parameters
     direction: 'horizontal',
@@ -47,3 +51,4 @@ const sectionStages = new Swiper('.section-stages__wrapper', {
     },
 
 });
+
