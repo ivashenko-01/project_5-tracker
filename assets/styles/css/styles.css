@@ -452,8 +452,21 @@ font-size: var(--button-font-size);
   max-width: 765px;
 }
 
+.answers-accord__items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .answers-accord__item {
   position: relative;
+  background-color: #F2F5FF;
+  padding: 30px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 
 .answers-accord__item > input[type="checkbox"]{
@@ -466,13 +479,13 @@ font-size: var(--button-font-size);
   max-height: 0;
   overflow: hidden;
 
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .answers-accord__item > input[type="checkbox"]:checked ~ .answers-accord__item-text  {
   max-height: 3000px;
 
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 .answers-accord__item > input[type="checkbox"]:checked ~ label i.ri-arrow-down-s-line{
@@ -488,7 +501,7 @@ font-size: var(--button-font-size);
   align-items: center;
   justify-content: space-between;
   min-height: 50px;
-  border-bottom: 1px solid #AEC5FF;
+  /* border-bottom: 1px solid #AEC5FF; */
   cursor: pointer;
 }
 
