@@ -257,8 +257,8 @@ font-size: var(--button-font-size);
 .section-region__items {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 50px;
+  /* flex-wrap: wrap; */
+  /* gap: 50px; */
 }
 .section-region__item {
   max-width: 430px;
@@ -666,3 +666,13 @@ font-size: var(--button-font-size);
 
 /* ============================= */
 
+
+
+/* .swiper-slide-active,
+.swiper-slide-duplicate-active {
+  scale: 1.1;
+} */
+
+.swiper-pagination {
+  position: relative;
+}

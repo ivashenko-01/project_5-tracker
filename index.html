@@ -44,6 +44,13 @@
     <!-- Подключение шрифтов на Локальном Хранилище -->
     <link rel="stylesheet" href="./assets/styles/css/fonts.css">
 
+    <!-- Подключение Библиотеки Swiper/Slick Slider -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
     <!-- Подключение файла с основными стилями -->
     <link rel="stylesheet" href="./assets/styles/css/styles.css">
 
@@ -58,6 +65,9 @@
 
     <!-- Заголовок страницы в браузере -->
     <title>Внедрение Яндекс Трекер</title>
+
+
+    
 
 </head>
 <body>
@@ -102,7 +112,7 @@
                         <div class="section-preview__content">
                             <div class="section-preview__content-text">
                                 <h1 class="section-preview__content-title">Внедрение Яндекс Трекера для гибкого управления вашей компанией</h1>
-                                <p class="section-preview__content-description">Эксперты выстроят систему управления проектами в вашей компании, чтобы выполнить задачи и достигать поставленные цели.</p>
+                                <p class="section-preview__content-description">Наши специалисты пронализируют процессы в Вашей компании, после чего настроят систему управления проектами, чтобы выполнить задачи и достигать поставленные цели.</p>
                             </div>
                             <div class="section-preview__content-buttons">
                                 <a href="#" class="section-preview__content-button">Рассчитать стоимость</a>
@@ -118,24 +128,39 @@
 
             <section class="section-region" id="section-region">
                 <div class="container">
-                    <div class="section-region__wrapper">
+                    <div class="section-region__wrapper swiper">
                         <h2 class="section-region__title">Яндекс Трекер подойдет под различные направления</h2>
-                        <ul class="section-region__items">
-                            <li class="section-region__item">
+                        <ul class="section-region__items swiper-wrapper">
+                            <li class="section-region__item swiper-slide">
                                 <h4 class="section-region__item-title">Разработка</h4>
                                 <p class="section-region__item-description">Организуйте работу команды разработчиков в Яндекс Трекере по методологии и оценивайте трудозатраты, планируйте спринты</p>
                             </li>
-                            <li class="section-region__item">
+                            <li class="section-region__item swiper-slide">
                                 <h4 class="section-region__item-title">Разработка</h4>
                                 <p class="section-region__item-description">Организуйте работу команды разработчиков в Яндекс Трекере по методологии и оценивайте трудозатраты, планируйте спринты</p>
                             </li>
-                            <li class="section-region__item">
+                            <li class="section-region__item swiper-slide">
+                                <h4 class="section-region__item-title">Разработка</h4>
+                                <p class="section-region__item-description">Организуйте работу команды разработчиков в Яндекс Трекере по методологии и оценивайте трудозатраты, планируйте спринты</p>
+                            </li>
+                            <li class="section-region__item swiper-slide">
+                                <h4 class="section-region__item-title">Разработка</h4>
+                                <p class="section-region__item-description">Организуйте работу команды разработчиков в Яндекс Трекере по методологии и оценивайте трудозатраты, планируйте спринты</p>
+                            </li>
+                            <li class="section-region__item swiper-slide">
+                                <h4 class="section-region__item-title">Разработка</h4>
+                                <p class="section-region__item-description">Организуйте работу команды разработчиков в Яндекс Трекере по методологии и оценивайте трудозатраты, планируйте спринты</p>
+                            </li>
+                            <li class="section-region__item swiper-slide">
                                 <h4 class="section-region__item-title">Разработка</h4>
                                 <p class="section-region__item-description">Организуйте работу команды разработчиков в Яндекс Трекере по методологии и оценивайте трудозатраты, планируйте спринты</p>
                             </li>
                         </ul>
-                    </div>
-                </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>  
+                    
+
             </section>
 
             <section class="section-steps" id="section-steps">
@@ -423,8 +448,9 @@
     <!-- Подключение Библиотеки FancyBox -->
     <!-- <script src=""></script> -->
 
-    <!-- Подключение Библиотеки Swiper/Slick Slider -->
-    <!-- <script src=""></script> -->
+    <!-- Подключение стилей библиотеке Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
 
     <!-- Онлайн виджет от Bitrix24 -->
     <script>

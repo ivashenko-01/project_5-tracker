@@ -23,7 +23,7 @@
   }
 
   .section-region__items {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
   }
   .section-steps__items {
@@ -43,6 +43,19 @@
   .section-form__submit {
     align-items: center;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 940px) {
+
+  .section-stages__items {
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-stages__item {
+    max-width: 400px;
   }
 }
 
@@ -75,10 +88,6 @@
     margin: 0 auto;
   }
 
-  .section-stages__items {
-    flex-direction: column;
-  }
-
 
   .section-stages__item-title {
     align-items: center;
@@ -86,7 +95,7 @@
   }
 
   .section-region__item {
-    max-width: 600px;
+    /* max-width: 600px; */
     width: 100%;
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -142,12 +151,22 @@
   
   }
 
+  .section-form__submit-text {
+    font-size: 14px;
+  }
+
 }
 
 @media (max-width: 360px) {
-
+  .section-form__submit-text {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 320px) {
+
+  .section-form__submit-text {
+    font-size: 10px;
+  }
 
 }
