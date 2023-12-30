@@ -1,0 +1,153 @@
+/*  -- =============== АДАПТИВ ПОД МОНИТОРЫ =============== --*/
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+/*  -- =============== АДАПТИВ ПОД ПЛАНШЕТЫ =============== --*/
+@media (max-width: 1024px) {
+  .header-top__nav {
+    display: none;
+  }
+  .section-steps__title {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .section-region__title {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .section-region__items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-steps__items {
+    margin: 0 auto;
+  }
+
+  .section-form__title {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .section-form__connection,
+  .section-form__user {
+    justify-content: center;
+  }
+
+  .section-form__submit {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+
+  :root {
+    
+    /* -- =============== FONT AND TYPOGRAPHY =============== -- */
+    /* -- .5rem = 8px | 1rem = 16px | 2rem = 32px -- */
+    --body-font: 'Poppins', sans-serif;
+  
+    --body-font-size: 0.75rem; /* 12px */
+  
+    --h1-font-size: 32px; /* 2rem */
+    --h2-font-size: 24px; /* 1.5rem */
+    --h3-font-size: 20px; /* 1.25rem */
+    --h4-font-size: 16px; /* 1rem */
+    --h5-font-size: 14px; /* 0.875rem */
+    --h6-font-size: 12px; /* 0.75rem */
+  
+    --text-font-size: 12px; /* 0.75rem */
+    --description-font-size: 10px; /* 0.625rem */
+  
+    --button-font-size: 12px; /* 0.75rem */
+  
+  }
+
+  .section-stages__title {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .section-stages__items {
+    flex-direction: column;
+  }
+
+
+  .section-stages__item-title {
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-region__item {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+  .section-region__item-title {
+    padding: 35px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+  .section-region__item-description {
+    padding: 25px;
+  }
+  .section-stages__item-title {
+    padding: 35px;
+  }
+  .section-stages__item-number {
+    font-size: 18px;
+    top: -15px;
+  }
+
+}
+
+/*  -- =============== АДАПТИВ ПОД СМАРТФОНЫ =============== --*/
+@media (max-width: 480px) {
+
+  :root {
+    
+    /* -- =============== FONT AND TYPOGRAPHY =============== -- */
+    /* -- .5rem = 8px | 1rem = 16px | 2rem = 32px -- */
+    --body-font: 'Poppins', sans-serif;
+  
+    --body-font-size: 0.625rem; /* 10px */
+  
+    --h1-font-size: 24px; /* 1.5rem */
+    --h2-font-size: 20px; /* 1.25rem */
+    --h3-font-size: 16px; /* 1rem */
+    --h4-font-size: 14px; /* 0.875rem */
+    --h5-font-size: 12px; /* 0.75rem */
+    --h6-font-size: 10px; /* 0.625rem */
+  
+    --text-font-size: 10px; /* 0.625rem */
+    --description-font-size: 8px; /* 0.5rem */
+  
+    --button-font-size: 10px; /* 0.625rem */
+  
+  }
+
+}
+
+@media (max-width: 360px) {
+
+}
+
+@media (max-width: 320px) {
+
+}

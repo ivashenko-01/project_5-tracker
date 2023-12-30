@@ -1,0 +1,626 @@
+/* ---------- Автор Framework Bear: IT BEAR ----------
+
+        Основатель: Евгений Иващенко
+        Контакты для связи:
+            - vkontakte: https://vk.com/id92506149
+            - telegram: @eugene2022987
+            - youtube: https://www.youtube.com/@itbear5698/featured
+            - github: https://github.com/ivashenko-01
+
+        Информация:
+            - данная чистая сборка находится в разработке
+            - суть чистой сборки: 
+
+        Версия Чистой сборки: v1.0.0
+
+        Контакты для поддержки автора:
+            - boosty: https://boosty.to/it-bear/donate
+            - vkontakte: https://vk.com/donut/it_bear_russia
+            - tinkoff: https://www.tinkoff.ru/cf/AOJg3fN3iOG
+
+   ------------------- Framework Bear ------------------- */
+
+/* -- =============== GOOGLE FONTS =============== -- */
+@import url(X);
+
+/* -- =============== LOCAL FONTS =============== -- */
+@font-face {
+  font-family: X;
+  src: url(X);
+  font-weight: X;
+  font-style: X;
+}
+
+
+/* -- =============== VARIABLES CSS =============== -- */
+
+:root {
+
+  /* -- =============== COLORS =============== -- */
+  --body-color: X;
+  --title-color: X;
+  --text-color: X;
+  
+  /* -- =============== FONT AND TYPOGRAPHY =============== -- */
+  /* -- .5rem = 8px | 1rem = 16px | 2rem = 32px -- */
+  --body-font: 'Poppins', sans-serif;
+
+  --body-font-size: 1rem; /* 16px */
+
+  --h1-font-size: 64px; /* 4rem */
+  --h2-font-size: 48px; /* 3rem */
+  --h3-font-size: 36px; /* 2,25rem */
+  --h4-font-size: 32px; /* 2rem */
+  --h5-font-size: 24px; /* 1.5rem */
+  --h6-font-size: 20px; /* 1.25rem */
+
+  --text-font-size: 16px; /* 1rem */
+  --description-font-size: 14px; /* 0.875rem */
+
+  --button-font-size: 20px; /* 1.25rem */
+
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title-color);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: 700;
+}
+
+h3 { 
+  font-size: var(--h3-font-size);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+  font-weight: 700;
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+  font-weight: 700;
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+  font-weight: 700;
+}
+
+p {
+  color: var(--text-color);
+  font-size: var(--text-font-size);
+}
+
+button {
+font-size: var(--button-font-size);
+}
+
+.container {
+  max-width: 1480px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.author-developer {
+  display: flex;
+  gap: 10px;
+}
+
+.header-top {
+  padding: 20px 0;
+}
+
+.header-top__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 10px;
+}
+/* =========================== */
+.section-preview, 
+.section-region,
+.section-steps,
+.section-stages,
+.section-questions,
+.section-form {
+  padding: 50px 0;
+}
+/* =========================== */
+
+/* ============================ */
+.section-preview__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.section-preview__content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.section-preview__content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section-preview__content-buttons {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.section-preview__content-title {
+  max-width: 888px;
+}
+
+.section-preview__content-description {
+  max-width: 550px;
+}
+
+.section-preview__content-button {
+  border-radius: 10px;
+  background: #5282FF;
+  padding: 16px 34px;
+}
+
+.section-preview__content-buttons .section-preview__content-button {
+  color: white;
+}
+
+.section-preview__content-consultaton {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* ============================ */
+
+/* ============================= */
+.section-region__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.section-region__title {
+  max-width: 700px;
+}
+.section-region__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.section-region__item {
+  max-width: 430px;
+  background-color: #F2F5FF;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.section-region__item-title {
+  color: white;
+  padding: 50px;
+  background-color: #5282FF;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.section-region__item-description {
+  padding: 50px;
+  background-color: #F2F5FF;
+  border-radius: 0 0 50px 50px;
+  -webkit-border-radius: 0 0 50px 50px;
+  -moz-border-radius: 0 0 50px 50px;
+  -ms-border-radius: 0 0 50px 50px;
+  -o-border-radius: 0 0 50px 50px;
+}
+/* ============================= */
+
+/* =============================== */
+.section-steps__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.section-steps__title {
+  max-width: 850px;
+}
+
+.section-steps__box-column {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.section-steps__items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section-steps__item {
+  max-width: 650px;
+  padding: 50px;
+  background-color: #F2F5FF;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.section-steps__item-images {
+  border-radius: 50px 50px 0 0;
+  -webkit-border-radius: 50px 50px 0 0;
+  -moz-border-radius: 50px 50px 0 0;
+  -ms-border-radius: 50px 50px 0 0;
+  -o-border-radius: 50px 50px 0 0;
+  overflow: hidden;
+}
+
+.section-steps__item-point {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-steps__item-title {
+  max-width: 320px;
+}
+
+.section-steps__item-switch {
+  position: relative;
+  width: 80px;
+  height: 30px;
+  background-color: #CED9FF;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.section-steps__item-circle {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  background: #5282FF;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+/* =============================== */
+
+/* ============================= */
+.section-stages__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.section-stages__title {
+  max-width: 800px;
+}
+.section-stages__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  gap: 50px;
+
+  border-radius: 50px;
+  background: #F2F5FF;
+
+  padding: 50px;
+}
+
+.section-stages__item {
+  position: relative;
+  padding-top: 25px;
+}
+
+.section-stages__item-number {
+  padding: 10px;
+  border-radius: 15px;
+  background: #5282FF;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  position: absolute;
+  top: -8%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.section-stages__item-title {
+  padding: 50px;
+  border-radius: 50px;
+  background: #FFF;
+}
+/* ============================= */
+
+/* ============================= */
+
+
+.section-questions__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.section-questions__title {
+  max-width: 765px;
+}
+
+.answers-accord__item {
+  position: relative;
+}
+
+.answers-accord__item > input[type="checkbox"]{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.answers-accord__item-text {
+  max-height: 0;
+  overflow: hidden;
+
+  margin-top: 20px;
+}
+
+.answers-accord__item > input[type="checkbox"]:checked ~ .answers-accord__item-text  {
+  max-height: 3000px;
+
+  padding-bottom: 50px;
+}
+
+.answers-accord__item > input[type="checkbox"]:checked ~ label i.ri-arrow-down-s-line{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.answers-accord__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50px;
+  border-bottom: 1px solid #AEC5FF;
+  cursor: pointer;
+}
+
+.answers-accord__item-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  text-align: center;
+
+  position: relative;
+}
+
+.answers-accord__item-button-line:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  height: 1px;
+  width: 14px;
+  background-color: black;
+
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.answers-accord__item-button-line:nth-child(2) {
+  position: absolute;
+  display: block;
+  height: 1px;
+  width: 14px;
+  background-color: black;
+  transform: rotate(90deg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -moz-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
+  -o-transform: translate(-50%, -50%) rotate(90deg);
+}
+.answers-accord__button:hover .answers-accord__item-button{
+  background-color: #5282FF;
+}
+.answers-accord__button:hover .answers-accord__item-button-line:nth-child(1){
+  background-color: white;
+}
+.answers-accord__button:hover .answers-accord__item-button-line:nth-child(2){
+  background-color: white;
+}
+
+
+.answers-accord__item > input[type="checkbox"]:checked ~ label .answers-accord__item-button-line:nth-child(2){
+  display: none;
+}
+
+
+
+/* ============================= */
+
+/* ============================= */
+.section-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+  background-color: #F2F5FF;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.section-form__title {
+  max-width: 750px;
+}
+
+.section-form__form {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.section-form__connection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  margin-bottom: 24px;
+}
+
+.section-form__user {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  margin-bottom: 30px;
+}
+
+
+
+.section-form__input::placeholder {
+  color: #AEC5FF;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section-form__select {
+  color: #AEC5FF;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section-form__connection div,
+.section-form__user div{
+  max-width: 535px;
+  width: 100%;
+}
+
+.section-form__input,
+.section-form__select {
+  border-radius: 10px;
+  border: 1px solid #5282FF;
+  padding: 16px 24px;
+  max-width: 535px;
+  width: 100%;
+}
+
+.section-form__submit {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.section-form__submit-text {
+  max-width: 535px;
+  color: #AEC5FF;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section-form__submit-button {
+  max-width: 300px;
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 10px;
+  background: #5282FF;
+  color: white;
+
+
+  font-size: 16px;
+  font-weight: 400;
+}
+/* ============================= */
+
+
+/* ========================== */
+
+.footer {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-top__wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.footer-bottom__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* ============================= */
+
