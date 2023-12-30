@@ -341,6 +341,7 @@ font-size: var(--button-font-size);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
 .section-steps__item-title {
@@ -455,7 +456,7 @@ font-size: var(--button-font-size);
 .answers-accord__items {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
 
 .answers-accord__item {

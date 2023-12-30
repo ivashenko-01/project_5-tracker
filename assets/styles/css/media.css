@@ -42,7 +42,8 @@
 
   .section-form__submit {
     align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 20px;
   }
 }
 
@@ -123,6 +124,10 @@
     font-size: 18px;
     top: -15px;
   }
+  .section-form__submit-text {
+    font-size: 14px;
+    text-align: center;
+  }
 
 }
 
@@ -153,6 +158,10 @@
 
   .section-form__submit-text {
     font-size: 14px;
+  }
+
+  .section-preview__images {
+    display: none;
   }
 
 }
